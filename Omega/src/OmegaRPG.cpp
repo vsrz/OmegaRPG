@@ -98,7 +98,7 @@ void OmegaRPG::startGame() {
     /* initialize debug log file */
     DG_debug_log = fopen( "omegadbg.log", "a" );
     assert( DG_debug_log ); /* WDT :) */
-    setvbuf( DG_debug_log, NULL, _IOLBF, 0);
+    setvbuf( DG_debug_log, NULL, _IOLBF, 2);
     fprintf(DG_debug_log, "##############  new game started ##############\n");
 #endif
 
